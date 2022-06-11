@@ -1,0 +1,38 @@
+.mapContainer {
+  display: flex;
+  width: 100vw;
+  height: 50vh;
+  margin-bottom: 2%;
+  z-index: 10;
+  position: relative;
+  color: var(--fontColor);
+}
+
+.hoverContainer {
+  width: 50vw;
+  height: 50vh;
+  background: transparent;
+  position: absolute;
+  z-index: 1000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hoverContainer:hover {
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  backdrop-filter: blur(1px);
+}
+
+.hoverContainer__texts {
+  font-size: 5rem;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}

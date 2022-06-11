@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --backgroundColor: rgb(0, 0, 0);
+  --boxShadowColor: white;
+  --headingColor: white;
+  --fontColor: white;
+  --headingColor: white;
+  --accentColor: gray;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: var(--backgroundColor);
+  font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+  background-image: url('./Rectangle.png');
+  background-size: 80%;
+  user-select: none;
+}
+
+@media only screen and (max-width: 1440px) {
+  .about__info {
+    padding-top: 0% !important;
+  }
+  .mapContainer {
+    height: 75vh !important;
+  }
+
+  .hoverContainer {
+    width: 75vw;
+    height: 75vw;
+  }
+
+  .appointments__calender > h1 {
+    font-size: 2.5rem !important;
+  }
+
+  .formAbove {
+    gap: 15% !important;
+  }
+
+  .doctor > h2 {
+    font-size: 2rem !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .NavBar {
+    padding: 10px 30px !important;
+  }
+  .doctor {
+    width: 65vw !important;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
+  .about__image > img {
+    max-width: 35vw !important;
+  }
+  .about__info {
+    font-size: 1.3rem !important;
+    padding: 5% !important;
+  }
+
+  .NavBar__right {
+    font-size: 2rem !important;
+  }
+
+  .doctor > h2 {
+    font-size: 2.5rem !important;
+  }
+
+  .footer__info {
+    font-size: 1.5rem !important;
+    width: 75vw !important;
+  }
+
+  .footer__contact ul {
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .about__info {
+    font-size: 1.1rem !important;
+    padding: 5% !important;
+  }
+
+  .doctor p {
+    font-size: 0.8rem !important;
+  }
+  .formAbove {
+    gap: 5% !important;
+  }
+
+  .footer__info {
+    font-size: 1.3rem !important;
+    width: 75vw !important;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .NavBar__right {
+    display: none;
+  }
+  .NavBar {
+    justify-content: center;
+  }
+  .doctor {
+    height: 70vh !important;
+  }
+  .doctor__image > img {
+    max-width: 25vw !important;
+  }
+
+  .appointments {
+    margin-bottom: 5% !important;
+  }
+
+  .appointments__calender > h1 {
+    font-size: 2rem !important;
+  }
+
+  .footer__info {
+    font-size: 1rem !important;
+    width: 75vw !important;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .about__info {
+    font-size: 1rem !important;
+    padding: 5% !important;
+  }
+
+  .appointments__setAppoint {
+    font-size: 1.5rem !important;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .mapContainer {
+    height: 50vh !important;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .about__info {
+    font-size: 0.9rem !important;
+    padding-top: 0% !important;
+  }
+  .doctor__image > img {
+    max-width: 25vw !important;
+  }
+  .inputs > input {
+    font-size: 1.3rem !important;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .about__info {
+    font-size: 0.8rem !important;
+    padding-top: 0% !important;
+  }
+  .doctor > h2 {
+    font-size: 2rem !important;
+  }
+  .formAbove {
+    flex-direction: column !important;
+  }
+  .inputs {
+    margin: 7% 0;
+  }
+  .inputs > input {
+    margin: 2% 0;
+  }
+
+  .appointments__setAppoint {
+    width: 50vw;
+  }
+
+  .footer__info {
+    width: 100vw !important;
+  }
+
+  body {
+    background-size: 90%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .about__hospital {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__image > img {
+    max-width: 50vw !important;
+    margin-bottom: 5%;
+  }
+
+  body {
+    background-size: 500%;
+  }
+
+  .doctor {
+    height: max-content !important;
+  }
+
+  .doctor__image > img {
+    max-width: 50vw !important;
+  }
+
+  .doctor > h2 {
+    font-size: 1.5rem !important;
+  }
+
+  .appointments__calender > h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .footer__info {
+    gap: 7px !important;
+    padding: 10px 0 !important;
+    flex-direction: column;
+  }
+
+  .footer__contact {
+    gap: 10px !important;
+  }
+
+  .footer__info > li:first-of-type {
+    font-size: 1.4rem;
+  }
+
+  .mapContainer {
+    height: 40vh !important;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .NavBar {
+    padding: 10px !important;
+    font-size: 2rem !important;
+  }
+  .footer__info > li:first-of-type {
+    display: none;
+  }
+  .about__info {
+    font-size: 1.2rem !important;
+    text-align: justify;
+  }
+
+  .about__image > img {
+    max-width: 70vw !important;
+  }
+  body {
+    background-size: 1000%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .appointments__calender > h1 {
+    font-size: 1.3rem !important;
+  }
+  .appointments__setAppoint {
+    width: 80vw !important;
+  }
+}
